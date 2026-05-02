@@ -88,7 +88,7 @@ import p_img45_2 from './p_img45_2.png'
 
 
 import logo from './logo.png'
-import banner_img from './banner_img_img.png'
+import banner_img from './banner_img.png'
 import cart_icon from './cart_icon.png'
 import bin_icon from './bin_icon.png'
 import dropdown_icon from './dropdown_icon.png'
@@ -166,8 +166,8 @@ export const products = [
     },
     {
         _id: "aaaad",
-        name: "Dress 4",
-        description: "A lightweight, usually knitted, pullover shirt, close-fitting and with a round neckline and short sleeves, worn as an undershirt or outer garment.",
+        name: "Little Explorer Plaid Jacket Set",
+        description: "Chic, cozy, and full of personality—the Little Explorer Plaid Jacket Set brings a stylish, street-inspired look to your child’s wardrobe. This outfit features an oversized green plaid jacket with a relaxed fit, layered over a soft high-neck inner top for added warmth and comfort. Designed for cooler days, the jacket offers a perfect balance of fashion and function, while the breathable inner layer keeps your little one snug without overheating. The bold plaid pattern adds a trendy touch, making it ideal for outings, photoshoots, or everyday wear with a fashionable twist.",
         price: 110,
         image: [p_img4],
         category: "Girls",
@@ -178,8 +178,8 @@ export const products = [
     },
     {
         _id: "aaaae",
-        name: "Dress 5",
-        description: "A lightweight, usually knitted, pullover shirt, close-fitting and with a round neckline and short sleeves, worn as an undershirt or outer garment.",
+        name: "Urban Breeze Checkered Shirt Set",
+        description: "Casual, cool, and effortlessly trendy—the Urban Breeze Checkered Shirt Set is designed for kids who love a laid-back street style. This outfit features a lightweight red checkered button-down shirt layered over a soft, breathable white tee, paired perfectly with sleek black leggings for a modern silhouette. The relaxed-fit shirt adds a stylish edge while ensuring comfort and easy movement, making it ideal for everyday wear, outings, or playdates. Crafted with soft, skin-friendly materials, this set keeps your little one comfortable while looking fashion-forward.",
         price: 130,
         image: [p_img5],
         category: "Girls",
@@ -190,8 +190,8 @@ export const products = [
     },
     {
         _id: "aaaaf",
-        name: "Dress 6",
-        description: "A lightweight, usually knitted, pullover shirt, close-fitting and with a round neckline and short sleeves, worn as an undershirt or outer garment.",
+        name: "Cloud Wash Denim Jacket & Wide-Leg Jeans Set",
+        description: "Modern, minimal, and effortlessly stylish—the Cloud Wash Denim Jacket & Wide-Leg Jeans Set is a must-have for a chic everyday look. This coordinated outfit features a light-wash denim jacket with a relaxed fit, paired with matching high-waisted wide-leg jeans for a clean, fashion-forward silhouette. Crafted from soft, durable denim, this set offers both comfort and structure, making it perfect for all-day wear. The subtle vintage-inspired wash adds a timeless appeal, while the loose fit ensures easy movement for active kids. Ideal for outings, casual events, or stylish day-to-day wear.",
         price: 140,
         image: [p_img6,p_img6_1],
         category: "Girls",
