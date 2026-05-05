@@ -24,6 +24,12 @@ const LatestCollection = () => {
           Fresh arrivals made to keep your little ones stylish, happy, and comfortable every day.
         </p>
       </div>
+
+      {/*Rendering products */}
+      <div className=''>
+        f
+      </div>
+
     </div>
   )
 }
