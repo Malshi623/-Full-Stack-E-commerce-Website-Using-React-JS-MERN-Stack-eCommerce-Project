@@ -30,7 +30,11 @@ const Footer = () => {
               <li>contactus@kidsfashion.com</li>
             </ul>
         </div>
+      </div>
 
+      <div>
+        <hr />
+        <p className='py-5 text-sm text-center'>Copyright 2026@ kidsfashion.com - All Right Reserved.</p>
       </div>
     </div>
   )
