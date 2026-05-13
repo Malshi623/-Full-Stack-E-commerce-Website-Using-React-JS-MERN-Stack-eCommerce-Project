@@ -12,7 +12,7 @@ const Collection = () => {
 
       {/*Filter Option */}
       <div className='min-w-60'>
-        <p className='my-2 text-xl flex items-center cursor-pointer gap-2 text-gray-800'>FILTERS
+        <p onClick={()=>setShowFilter(!showFilter)} className='my-2 text-xl flex items-center cursor-pointer gap-2 text-gray-800'>FILTERS
           <img className={`h-3 sm:hidden ${showFilter ? 'rotate-90' : ''}`} src={assets.dropdown_icon} alt="" />
         </p>
 
