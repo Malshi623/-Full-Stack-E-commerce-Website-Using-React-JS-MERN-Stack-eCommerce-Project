@@ -1,6 +1,7 @@
 import React, { useContext, useState } from 'react'
 import { ShopContext } from '../context/ShopContext'
 import { assets } from '../src/assets/assets';
+import Title from '../components/Title';
 
 const Collection = () => {
 
@@ -11,7 +12,7 @@ const Collection = () => {
     <div className='flex flex-col sm:flex-row gap-1 sm:gap-10 pt-10 border-t text-gray-400'>
 
       {/*Filter Option */}
-      <div className='min-w-60'>
+      <div className='min-w-50'>
         <p onClick={()=>setShowFilter(!showFilter)} className='my-2 text-xl flex items-center cursor-pointer gap-2 text-gray-800'>FILTERS
           <img className={`h-3 sm:hidden ${showFilter ? 'rotate-90' : ''}`} src={assets.dropdown_icon} alt="" />
         </p>
@@ -40,11 +41,25 @@ const Collection = () => {
               <input className='w-3' type="checkbox" value={'Bottomwear'} />Bottomwear
             </p>
             <p className='flex gap-2'>
-              <input className='w-3' type="checkbox" value={'Wnterwear'} />Winterwear
+              <input className='w-3' type="checkbox" value={'Winterwear'} />Winterwear
             </p>
           </div>
         </div>
+      </div>
 
+      {/*Right side */}
+      <div className='flex-1'>
+        <div className='flex flex-col md:flex-row md:items-center justify-between gap-4 mb-4 text-2xl'>
+          <Title text1={'ALL'} text2={'COLLECTION'} />
+
+          {/*Product Sort */}
+          <select className='border-2 border-gray-300 text-sm px-2 py-1 w-full md:w-auto'>
+            <option value="relevant">Sort by: Relevant</option>
+            <option value="low-high">Sort by: Low to High</option>
+            <option value="high-low">Sort by: High to Low</option>
+          </select>
+
+        </div>
       </div>
     </div>
   )
