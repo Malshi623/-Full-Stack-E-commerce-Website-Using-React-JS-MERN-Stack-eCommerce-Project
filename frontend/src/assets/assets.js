@@ -349,7 +349,7 @@ export const products = [
         name: "Denim Charm Layered Girls Dress with Mini Crossbody Bag",
         description: "This adorable two-piece style dress blends classic sweetness with a trendy twist. Featuring a soft white short-sleeve dress with a crisp collar and a flared skirt, it’s layered with a denim-style bodice for a modern, playful look. The front button details add charm, while the puffed sleeves enhance its cute, youthful appeal. The outfit is completed with a matching mini denim crossbody bag, perfect for carrying tiny essentials and adding a fashionable touch. Ideal for casual outings, parties, or picture-perfect moments, this dress offers both comfort and style for little fashionistas.",
         price: 130,
-        image: [p_img13,p_img13_1],
+        image: [p_img13_1,p_img13],
         category: "Girls",
         subCategory: "Casualwear",
         sizes: ["XS","S", "M", "L","XL"],

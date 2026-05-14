@@ -1,12 +1,18 @@
-import React, { useContext, useState } from 'react'
+import React, { useContext, useEffect, useState } from 'react'
 import { ShopContext } from '../context/ShopContext'
 import { assets } from '../src/assets/assets';
 import Title from '../components/Title';
+import ProductItems from '../components/ProductItems';
 
 const Collection = () => {
 
   const {products} = useContext(ShopContext);
   const [showFilter,setShowFilter] = useState(false);
+  const [filterProduct,setFilterProduct] = useState([]);
+
+  useEffect(()=>{
+    setFilterProduct(products);
+  },[])
 
   return (
     <div className='flex flex-col sm:flex-row gap-1 sm:gap-10 pt-10 border-t text-gray-400'>
@@ -35,13 +41,13 @@ const Collection = () => {
           <p className='mb-3 text-sm font-medium text-gray-800'>TYPE</p>
           <div className='flex flex-col gap-2 text-sm font-light text-gray-700'>
             <p className='flex gap-2'>
-              <input className='w-3' type="checkbox" value={'Topwear'} />Topwear
+              <input className='w-3' type="checkbox" value={'Casualwear'} />Casualwear
             </p>
             <p className='flex gap-2'>
-              <input className='w-3' type="checkbox" value={'Bottomwear'} />Bottomwear
+              <input className='w-3' type="checkbox" value={'Loungewear'} />Loungewear
             </p>
             <p className='flex gap-2'>
-              <input className='w-3' type="checkbox" value={'Winterwear'} />Winterwear
+              <input className='w-3' type="checkbox" value={'Partywear'} />Partywear
             </p>
           </div>
         </div>
@@ -58,7 +64,15 @@ const Collection = () => {
             <option value="low-high">Sort by: Low to High</option>
             <option value="high-low">Sort by: High to Low</option>
           </select>
+        </div>
 
+        {/*Map Products */}
+        <div className='grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-y-6'>
+          {
+            filterProduct.map((item,index)=>(
+              <ProductItems key={index} id={item._id} image={item.image} name={item.name} price={item.price}/>
+            ))
+          }
         </div>
       </div>
     </div>
