@@ -14,7 +14,7 @@ const Footer = () => {
         </div>
 
         <div>
-            <p className='text-xl font-medium mb-5'>COMPANY</p>
+            <p className='text-xl font-medium mb-5 text-gray-800'>COMPANY</p>
             <ul className='flex flex-col gap-1 text-gray-600'>
               <li>Home</li>
               <li>About Us</li>
@@ -24,7 +24,7 @@ const Footer = () => {
         </div>
 
         <div>
-          <p className='text-xl font-medium mb-5'>GET IN TOUCH</p>
+          <p className='text-xl font-medium mb-5 text-gray-800'>GET IN TOUCH</p>
           <ul className='flex flex-col gap-1 text-gray-600'>
               <li>+112-345-6789</li>
               <li>contactus@kidsfashion.com</li>
@@ -33,8 +33,8 @@ const Footer = () => {
       </div>
 
       <div>
-        <hr />
-        <p className='py-5 text-sm text-center'>Copyright 2026@ kidsfashion.com - All Right Reserved.</p>
+        <hr className='text-gray-400' />
+        <p className='py-5 text-sm text-center text-gray-900'>Copyright 2026@ kidsfashion.com - All Right Reserved.</p>
       </div>
     </div>
   )
