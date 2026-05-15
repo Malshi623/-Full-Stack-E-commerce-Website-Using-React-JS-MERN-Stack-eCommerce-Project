@@ -34,13 +34,13 @@ const Collection = () => {
     setFilterProduct(products);
   },[])
 
-  useEffect(()=>{
+  /* useEffect(()=>{
     console.log(category);
   },[category])
 
   useEffect(()=>{
     console.log(subCategory);
-  },[subCategory])
+  },[subCategory]) */
 
   return (
     <div className='flex flex-col sm:flex-row gap-1 sm:gap-10 pt-10 border-t text-gray-400'>
@@ -69,13 +69,13 @@ const Collection = () => {
           <p className='mb-3 text-sm font-medium text-gray-800'>TYPE</p>
           <div className='flex flex-col gap-2 text-sm font-light text-gray-700'>
             <p className='flex gap-2'>
-              <input className='w-3' type="checkbox" value={'Casualwear'} />Casualwear
+              <input className='w-3' type="checkbox" value={'Casualwear'} onChange={toggleSubCategory} />Casualwear
             </p>
             <p className='flex gap-2'>
-              <input className='w-3' type="checkbox" value={'Loungewear'} />Loungewear
+              <input className='w-3' type="checkbox" value={'Loungewear'} onChange={toggleSubCategory} />Loungewear
             </p>
             <p className='flex gap-2'>
-              <input className='w-3' type="checkbox" value={'Partywear'} />Partywear
+              <input className='w-3' type="checkbox" value={'Partywear'} onChange={toggleSubCategory} />Partywear
             </p>
           </div>
         </div>
