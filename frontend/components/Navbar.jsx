@@ -49,7 +49,7 @@ const Navbar = () => {
           {/*cart icon*/}
           <Link to='/cart' className='relative'>
             <img src={assets.cart_icon} className='w-5 min-w-5' alt="" />
-            <p className='absolute right-[-5px] bottom-[-5px] w-4 text-center leading-4 bg-black text-white aspect-squre rounded-full text-[8px]'>10</p>
+            <p className='absolute -right-1.25 -bottom-1.25 w-4 text-center leading-4 bg-black text-white aspect-squre rounded-full text-[8px]'>10</p>
           </Link>
 
           {/*menu icon for small screens*/}

@@ -28,7 +28,7 @@ const SearchBar = () => {
         <div className='flex items-center gap-3 ml-3'>
           <img className='w-4 cursor-pointer' src={assets.search_icon} alt="" />
           
-          <span className='w-[1px] h-4 bg-gray-400'></span>
+          <span className='w-px h-4 bg-gray-400'></span>
 
           <img onClick={()=>setShowSearch(false)} className='inline w-3 cursor-pointer' src={assets.cross_icon} alt="" />
         </div>
