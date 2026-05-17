@@ -1,16 +1,19 @@
-import React, { useState } from 'react'
+import React, { useContext, useState } from 'react'
 import {assets} from '../src/assets/assets'
 import {Link,NavLink} from 'react-router-dom'
+import { ShopContext } from '../context/ShopContext';
 
 const Navbar = () => {
 
-  const [visible, setVisible] = useState(false); //state variable
+  const [visible, setVisible] = useState(false); 
+  const {setShowSearch} = useContext(ShopContext);
+
   return (
     <div className='flex items-center justify-between py-5 font-medium'>
         <Link to='/'><img src={assets.logo} className='w-50' alt="" /></Link>
 
         {/*navigation bar menu list*/}
-        <ul className='hidden sm:flex gap-5 text-5m text-gray-700'> 
+        <ul className='hidden sm:flex gap-3 md:gap-5 text-sm md:text-sm lg:text-base text-gray-700'> 
             <NavLink to='/' className='flex flex-col items-center gap-1'>
               <p>HOME</p>
               <hr className='w-2/4 border-none h-[1.5px] bg-gray-700 hidden'/>
@@ -30,8 +33,8 @@ const Navbar = () => {
         </ul>
         
         {/*search icon and profile icon*/}
-        <div className='flex items-center gap-6'>
-          <img src={assets.search_icon} className='w-5 min-w-5 cursor-pointer' alt="" />
+        <div className='flex items-center gap-4 md:gap-6'>
+          <img onClick={()=>setShowSearch(true)} src={assets.search_icon} className='w-5 min-w-5 cursor-pointer' alt="" />
           <div className='group relative'>
             <img src={assets.profile_icon} className='w-5 min-w-5 cursor-pointer' alt="" />
             <div className='group-hover:block hidden absolute dropdown-menu right-0 pt-4'>
