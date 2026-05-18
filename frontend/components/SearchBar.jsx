@@ -30,7 +30,7 @@ const SearchBar = () => {
           
           <span className='w-px h-4 bg-gray-400'></span>
 
-          <img onClick={()=>setShowSearch(false)} className='inline w-3 cursor-pointer' src={assets.cross_icon} alt="" />
+          <img onClick={()=> {setShowSearch(false); setSearch('');}} className='inline w-3 cursor-pointer' src={assets.cross_icon} alt="" />
         </div>
       </div>
         
